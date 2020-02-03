@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    build: .
+#    depends_on:
+#      - elasticsearch
+    ports:
+      - "8090:8090"
+    restart: unless-stopped
+#  elasticsearch:
+#    image: "elasticsearch:6.8.3"
+#    command: elasticsearch
+#    ports:
+#      - 9007:9200
+#    volumes:
+#      - "./esdata:/usr/share/elasticsearch/data"
+#    restart: unless-stopped
+#  kibana:
+#    image: "kibana:6.8.3"
+#    ports:
+#      - 9006:5601
+#    restart: unless-stopped
+
